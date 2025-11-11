@@ -32,5 +32,6 @@ build/
 ### VS Code ###
 .vscode/
 
-# Allow final build artifact for Bajaj submission
+# Allow final JAR for submission
 !target/webhook-solution-0.0.1-SNAPSHOT.jar
+
