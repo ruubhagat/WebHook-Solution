@@ -6,15 +6,27 @@
 
 ---
 
-### • Task Overview
-On application startup:
-- Generates a webhook and JWT access token.
-- Automatically sends the final SQL solution using the JWT token.
-- No manual trigger or endpoint is used.
+## Task Overview
+Spring Boot application that:
+- Sends a POST request to generate a webhook and JWT token on startup  
+- Determines SQL problem based on RegNo (Even → Question 2)  
+- Submits the final SQL query automatically using the provided webhook URL  
 
 ---
 
-### • SQL Solution (Question 2 - Even RegNo)
+## Tech Stack
+- Java 17
+- Spring Boot 3.x
+- WebClient (Reactive REST)
+- Maven
+
+---
+
+## 📜 SQL Problem (Question 2)
+**Problem:**  
+For each employee, find how many employees in the same department are *younger* than them.
+
+**Final SQL Query:**
 ```sql
 SELECT e1.EMP_ID, e1.FIRST_NAME, e1.LAST_NAME, d.DEPARTMENT_NAME,
        COUNT(e2.EMP_ID) AS YOUNGER_EMPLOYEES_COUNT
