@@ -37,3 +37,8 @@ LEFT JOIN EMPLOYEE e2
       AND e2.DOB > e1.DOB
 GROUP BY e1.EMP_ID, e1.FIRST_NAME, e1.LAST_NAME, d.DEPARTMENT_NAME
 ORDER BY e1.EMP_ID DESC;
+
+**Output:**
+
+https://github.com/ruubhagat/WebHook-Solution/blob/main/Output.png 
+
